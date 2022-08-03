@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';  
 
-const ProfileBody = () => {
+const ProfileBody = ({user}) => {
 
   return (
     <Container>
@@ -13,23 +13,23 @@ const ProfileBody = () => {
       </Row>
       <Row>
         <Col>Username</Col>
-        <Col>TheRockIsCooking</Col>
+        <Col>{user.username}</Col>
       </Row>
       <Row>
         <Col>E-mail</Col>
-        <Col>DwayneJhonson@WWE.com</Col>
+        <Col>{user.email}</Col>
       </Row>
       <Row>
         <Col>Password</Col>
-        <Col>BigFat2022</Col>
+        <Col>{user.password}</Col>
       </Row>
       <Row>
         <Col>Full Name</Col>
-        <Col>Dwayne Jhonson</Col>
+        <Col>{user.fullname}</Col>
       </Row>
       <Row>
         <Col>Title</Col>
-        <Col>Admin</Col>
+        <Col>{user.role}</Col>
       </Row>
       <Row>
         <Col>Language</Col>

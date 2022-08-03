@@ -1,19 +1,24 @@
-import logo from './logo.svg';
-import ProfileHeader from './Components/ProfileHeader';
-import ProfileBody from './Components/ProfileBody';
+import Profile from './Profile/Profile';
 import './App.css';
-
+import image from './profilePic.jpg'
 function App() {
   const user={id:1,
   fullname:'Dwayne The Rock',
   email:'theRockIsCooking@WWE.com',
   role:'Admin',
+  password:'BigWayne2020WWE',
+  image:image,
+  username:"Rocky"
 
   }
+const handleClick=()=>{
+  alert(`user : ${user.fullname}
+          role: ${user.role}`)
+}
   return (
     <div>
-      <ProfileHeader  />
-      <ProfileBody></ProfileBody>
+      <Profile fullname={user.fullname} email={user.email} role={user.role} password={user.password} image={user.image} handleClick={handleClick} />
+      
     </div>
   );
 }
