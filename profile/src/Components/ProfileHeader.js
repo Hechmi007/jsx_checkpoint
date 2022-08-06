@@ -27,7 +27,6 @@ const ProfileHeader = ({user}) => {
         </Col>
 
       </Row>
-      <button onClick={user.handleClick}>test</button>
       
     </Container>
   )
